@@ -21,11 +21,3 @@ export default function Home() {
     </main>
   );
 }
-
-// Intro - C - D
-// About - C - D
-// Experience - C - D
-// Projects -
-// Education - C - D
-// Skills - C - D
-// Achievements and honors - C - D
