@@ -1,6 +1,8 @@
-export function Twitter() {
+import { ComponentPropsWithoutRef } from 'react';
+
+export function Twitter({ className, ...props }: ComponentPropsWithoutRef<'svg'>) {
   return (
-    <svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' className='size-4'>
+    <svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' className={`size-4 ${className}`} {...props}>
       <title>X</title>
       <path
         fill='currentColor'
@@ -10,9 +12,9 @@ export function Twitter() {
   );
 }
 
-export function Github() {
+export function Github({ className, ...props }: ComponentPropsWithoutRef<'svg'>) {
   return (
-    <svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' className='size-4'>
+    <svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' className={`size-4 ${className}`} {...props}>
       <title>Github</title>
       <path
         fill='currentColor'
@@ -22,9 +24,9 @@ export function Github() {
   );
 }
 
-export function LinkedIn() {
+export function LinkedIn({ className, ...props }: ComponentPropsWithoutRef<'svg'>) {
   return (
-    <svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' className='size-4'>
+    <svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' className={`size-4 ${className}`} {...props}>
       <title>LinkedIn</title>
       <path
         fill='currentColor'

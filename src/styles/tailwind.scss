@@ -99,16 +99,18 @@
 	}
 }
 
-@layer base {
-	* {
-		@apply border-border;
-	}
-	body {
-		@apply bg-background text-foreground;
-	}
+* {
+	@apply border-border;
 }
 
-p {
-	font-family: var(--font-space-grotesk);
-	letter-spacing: 0.6px;
+body {
+	@apply bg-background text-foreground;
+}
+
+h2 {
+	@apply text-xl font-bold pb-3;
+}
+
+h3 {
+	@apply text-base font-semibold leading-none;
 }
