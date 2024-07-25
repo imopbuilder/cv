@@ -1,2 +1,2 @@
 https://:project.pages.dev/*
-  Content-Security-Policy: frame-ancestors https://www.rahulgg.in/;
+  Content-Security-Policy: script-src 'self'; frame-ancestors 'none';
