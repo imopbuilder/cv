@@ -3,9 +3,8 @@ import { ABOUT } from '@/constants/about';
 import { INTRO } from '@/constants/intro';
 import '@/styles/main.scss';
 import type { Metadata } from 'next';
-import { Inter, Space_Grotesk } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space-grotesk' });
 const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 
 export const metadata: Metadata = {
@@ -20,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={`${inter.className} ${spaceGrotesk.variable}`}>
+      <body className={`${inter.className}`}>
         <ThemeProvider attribute='class' defaultTheme='light' enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>

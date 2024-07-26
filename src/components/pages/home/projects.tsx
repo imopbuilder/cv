@@ -14,12 +14,14 @@ export function Projects() {
                 <div className=''>
                   <h3 className='text-base font-semibold'>
                     {url ? (
-                      <Button variant='link' className='h-auto p-0' asChild>
-                        <Link href={url} className='inline-flex items-center gap-1' target='_blank' rel='noreferrer'>
-                          {name}
-                          <span className='size-1 rounded-full bg-green-500' />
-                        </Link>
-                      </Button>
+                      <div className='flex items-center justify-start gap-1'>
+                        <Button variant='link' className='h-auto p-0' asChild>
+                          <Link href={url} target='_blank' rel='noreferrer'>
+                            {name}
+                          </Link>
+                        </Button>
+                        <span className='size-1 rounded-full bg-green-500' />
+                      </div>
                     ) : (
                       name
                     )}
