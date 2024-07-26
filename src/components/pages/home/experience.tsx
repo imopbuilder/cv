@@ -21,7 +21,7 @@ export function Experience() {
                   <p className='text-sm text-muted-foreground tabular-nums'>{dateRange}</p>
                 </div>
                 <p className='text-sm mt-1.5 font-mono font-medium'>{role}</p>
-                <p className='text-xs text-muted-foreground mt-2 font-mono font-medium'>
+                <p className='text-xs/[16px] text-muted-foreground mt-2 font-mono font-medium'>
                   {description} Technologies: {technologies.join(', ')}
                 </p>
               </div>

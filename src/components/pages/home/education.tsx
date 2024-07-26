@@ -10,10 +10,10 @@ export function Education() {
             return (
               <div key={id}>
                 <div className='flex items-end justify-between'>
-                  <h3>{college}</h3>
+                  <h3 className='leading-5'>{college}</h3>
                   <p className='text-sm text-muted-foreground tabular-nums'>{duration}</p>
                 </div>
-                <p className='text-sm text-muted-foreground mt-2 font-mono font-medium'>{branch}</p>
+                <p className='text-sm text-muted-foreground mt-1.5 font-mono font-medium'>{branch}</p>
               </div>
             );
           })}
