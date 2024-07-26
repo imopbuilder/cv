@@ -24,7 +24,7 @@ export const ACHIEVEMENTS: z.infer<typeof achievementSchema>[] = [
     id: 3,
     title: 'Hacktoberfest',
     description: "Contributed to 8 open source projects through GitHub and won the Hacktoberfest '22 and '23",
-    date: '2022 & 2023',
+    date: '2023 & 2022',
   },
   {
     id: 4,

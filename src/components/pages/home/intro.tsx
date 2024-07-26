@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { INTRO } from '@/constants/intro';
 import Link from 'next/link';
@@ -35,7 +35,6 @@ export function Intro() {
         </div>
         <div className='relative w-full md:max-w-44 sm:max-w-32 max-w-28 overflow-hidden'>
           <Avatar className='rounded-none w-full h-auto'>
-            <AvatarImage src={`/resume/${INTRO.profilePic.alt}`} className='aspect-auto' alt={INTRO.profilePic.alt} />
             <AvatarFallback className='aspect-square rounded-none font-semibold font-mono'>RP</AvatarFallback>
           </Avatar>
           {/* <Image
