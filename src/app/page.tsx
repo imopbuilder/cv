@@ -8,6 +8,8 @@ import { ResumeCommandMenu } from '@/components/pages/home/resume-command-menu';
 import { Skills } from '@/components/pages/home/skills';
 
 export default function Home() {
+  console.log('Env variable: ', process.env.CF_PAGES_URL);
+
   return (
     <main className='md:py-16 py-10 px-5 space-y-8 relative'>
       <Intro />

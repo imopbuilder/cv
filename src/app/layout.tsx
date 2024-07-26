@@ -10,6 +10,12 @@ const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600', '700'] }
 export const metadata: Metadata = {
   title: `${INTRO.name} | ${INTRO.description}`,
   description: `${ABOUT}`,
+  openGraph: {
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
 };
 
 export default function RootLayout({

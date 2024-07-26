@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node ./scripts/postbuild.js",
     "pages:build": "pnpm build && pnpm postbuild",
+    "pages:dev": "npx wrangler pages dev out",
     "start": "serve out",
     "format": "pnpm biome format --write ./src",
     "lint": "pnpm biome lint ./src --apply",
@@ -40,6 +40,7 @@
     "postcss": "^8.4.39",
     "sass": "^1.77.6",
     "tailwindcss": "^3.4.4",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "wrangler": "^3.67.1"
   }
 }
