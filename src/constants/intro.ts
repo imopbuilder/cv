@@ -1,5 +1,5 @@
-import { Github, LinkedIn, Twitter } from '@/components/global/icons';
-import { Laugh, Mail, Phone } from 'lucide-react';
+import { Github, LinkedIn, Portfolio, Twitter } from '@/components/global/icons';
+import { Mail, Phone } from 'lucide-react';
 
 export const INTRO = {
   name: 'Rahul Palamarthi',
@@ -25,7 +25,7 @@ export const INTRO = {
     },
     {
       icon: Twitter,
-      label: 'X',
+      label: 'twitter/X',
       href: 'https://twitter.com/rahu1gg',
     },
   ],
@@ -44,8 +44,8 @@ export const INTRO = {
       value: '+919515989271',
     },
     {
-      icon: Laugh,
-      label: 'Personal Website',
+      icon: Portfolio,
+      label: 'Portfolio',
       href: 'https://rahulgg.in',
       value: 'https://rahulgg.in',
     },

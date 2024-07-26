@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { INTRO } from '@/constants/intro';
 import Link from 'next/link';
 
@@ -20,11 +21,20 @@ export function Intro() {
           </p>
           <div className='flex items-start justify-start gap-2 pt-1 print:hidden'>
             {[...INTRO.personalLinks, ...INTRO.socialLinks].map((link) => (
-              <Button key={link.label} className='text-muted-foreground h-8 w-8' variant='outline' size='icon' asChild>
-                <Link href={link.href} target='_blank' rel='noreferrer'>
-                  {<link.icon className='h-4 w-4' />}
-                </Link>
-              </Button>
+              <TooltipProvider key={link.label}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button className='text-muted-foreground h-8 w-8' variant='outline' size='icon' asChild>
+                      <Link href={link.href} target='_blank' rel='noreferrer'>
+                        {<link.icon className='h-4 w-4 text-muted-foreground' />}
+                      </Link>
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent className='capitalize font-medium' side='bottom'>
+                    {link.label}
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             ))}
           </div>
           <div className='hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex print:text-[12px]'>
@@ -33,7 +43,7 @@ export function Intro() {
             ))}
           </div>
         </div>
-        <div className='relative w-full md:max-w-44 sm:max-w-32 max-w-28 overflow-hidden'>
+        <div className='relative w-full md:max-w-44 sm:max-w-32 max-w-28 overflow-hidden print:hidden'>
           <Avatar className='rounded-none w-full h-auto'>
             <AvatarFallback className='aspect-square rounded-none font-semibold font-mono'>RP</AvatarFallback>
           </Avatar>
