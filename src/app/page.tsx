@@ -21,7 +21,7 @@ export default function Home() {
       <section className='fixed w-max top-2 right-2 !mt-0 md:inline-block hidden'>
         <div>
           <code className='text-sm text-green-500 dark:text-green-500 font-medium'>
-            {process.env.CF_PAGES_BRANCH}: {process.env.CF_PAGES_COMMIT_SHA}
+            {process.env.CF_PAGES_BRANCH}: {process.env.NEXT_PUBLIC_COMMIT_ID}
           </code>
         </div>
       </section>
