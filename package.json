@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "postbuild": "node ./scripts/postbuild.js",
-    "pages:dev": "npx wrangler pages dev out",
+    "pages:dev": "wrangler pages dev out --compatibility-date=2023-12-18 --port 3000 WRANGLER_LOG=debug",
     "start": "serve out",
     "format": "pnpm biome format --write ./src",
     "lint": "pnpm biome lint ./src --apply",
