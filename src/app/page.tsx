@@ -18,6 +18,13 @@ export default function Home() {
       <Projects />
       <Achievements />
       <ResumeCommandMenu />
+      <section className='fixed w-max top-2 right-2 !mt-0 md:inline-block hidden'>
+        <div>
+          <code className='text-sm text-green-500 dark:text-green-500 font-medium'>
+            {process.env.CF_PAGES_BRANCH}: {process.env.CF_PAGES_COMMIT_SHA}
+          </code>
+        </div>
+      </section>
     </main>
   );
 }
