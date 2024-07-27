@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600', '700'] }
 export const metadata: Metadata = {
   title: `${INTRO.name} | ${INTRO.description}`,
   description: `${ABOUT}`,
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   openGraph: {
     type: 'website',
   },
